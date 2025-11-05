@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Score - Solitaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="section center">
+    <h1>Add Your Score</h1>
+    <p>Enter your name and we’ll generate a random score and duration for you.</p>
+
+    <form id="add-score-form" class="card">
+      <label for="player-name">Player Name</label>
+      <input type="text" id="player-name" name="player-name" required maxlength="100" placeholder="Enter your name">
+
+      <button type="submit" class="btn primary full-width">Submit Score</button>
+
+      <p id="add-score-message" class="muted"></p>
+    </form>
+
+    <p class="mt">
+      <a href="index.html" class="link">Back to Leaderboard</a>
+    </p>
+  </main>
+
+  <script src="axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -366,7 +366,7 @@ tbody tr:hover {
   color: #a7f3d0;
 }
 
-
+/* Back link */
 .add-score-page .link {
   color: #22c55e;
   text-decoration: none;
@@ -380,6 +380,7 @@ tbody tr:hover {
   color: #86efac;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   #add-score-form {
     padding: 1.5rem;
