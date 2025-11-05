@@ -305,7 +305,6 @@ tbody tr:hover {
   line-height: 1.6;
 }
 
-/* Form card */
 #add-score-form {
   background: rgba(3, 22, 14, 0.9);
   padding: 2rem;
@@ -329,66 +328,5 @@ tbody tr:hover {
   padding: 0.7rem 1rem;
   border-radius: 8px;
   border: 1px solid #14532d;
-  background: #02120a;
-  color: #e8f5e9;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  transition: border-color 0.3s ease;
-}
 
-#add-score-form input[type="text"]:focus {
-  outline: none;
-  border-color: #16a34a;
-  box-shadow: 0 0 5px rgba(22, 163, 74, 0.4);
-}
-
-#add-score-form button {
-  width: 100%;
-  background: #16a34a;
-  color: #f0fdf4;
-  border: none;
-  border-radius: 999px;
-  padding: 0.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-#add-score-form button:hover {
-  background: #22c55e;
-  transform: translateY(-2px);
-}
-
-#add-score-message {
-  text-align: center;
-  margin-top: 1rem;
-  color: #a7f3d0;
-}
-
-
-.add-score-page .link {
-  color: #22c55e;
-  text-decoration: none;
-  margin-top: 1.5rem;
-  display: inline-block;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.add-score-page .link:hover {
-  color: #86efac;
-}
-
-@media (max-width: 600px) {
-  #add-score-form {
-    padding: 1.5rem;
-  }
-  .add-score-page h1 {
-    font-size: 1.8rem;
-  }
-  .add-score-page p {
-    font-size: 0.95rem;
-  }
-}
 
