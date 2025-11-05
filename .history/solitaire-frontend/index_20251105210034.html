@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solitaire Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Solitaire Champions</h1>
+      <p>Play, compete, and climb the leaderboard.</p>
+      <div class="hero-buttons">
+        <a href="https://play.google.com" target="_blank" class="btn primary">Get it on Google Play</a>
+        <a href="https://www.apple.com/app-store/" target="_blank" class="btn secondary">Download on App Store</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="download" class="section">
+      <h2>Download the Game</h2>
+      <p>Available on Android and iOS. Download, play a round, then add your score to the leaderboard!</p>
+      <div class="download-links">
+        <a href="https://play.google.com" target="_blank" class="btn primary">Google Play</a>
+        <a href="https://www.apple.com/app-store/" target="_blank" class="btn secondary">App Store</a>
+      </div>
+    </section>
+
+    <!-- Leaderboard section -->
+    <section id="leaderboard" class="section">
+      <div class="section-header">
+        <h2>Leaderboard</h2>
+        <a href="add-score.html" class="btn small">Add Score</a>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Player</th>
+            <th>Score</th>
+            <th>Duration (s)</th>
+            <th>When</th>
+          </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+          </tbody>
+        </table>
+        <p id="leaderboard-empty" class="muted hidden">No scores yet. Be the first one!</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About the Game</h2>
+      <p>
+        This demo site is built for a full-stack project: PHP + MySQL backend, and a clean vanilla HTML/CSS/JS frontend.
+        Anyone can add a score and appear on the leaderboard instantly.
+      </p>
+
+      <h3>Contact</h3>
+      <p>If you have feedback, reach out at <a href="mailto:solitaire@example.com">solitaire@example.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Solitaire Demo &copy; 2025</p>
+  </footer>
+
+  <script src="axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
