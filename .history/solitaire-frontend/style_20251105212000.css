@@ -85,7 +85,7 @@ body {
     font-size: 1rem;
   }
 }
-
+/* ---------- Download Section ---------- */
 #download {
   text-align: center;
   background: linear-gradient(180deg, #021f14 0%, #052e1e 100%);
@@ -137,7 +137,7 @@ body {
   opacity: 0.9;
 }
 
-
+/* ---------- Leaderboard Section ---------- */
 #leaderboard {
   padding: 3rem 1.5rem;
   background: linear-gradient(180deg, #052e1e 0%, #03160e 100%);
@@ -171,7 +171,7 @@ body {
   opacity: 0.9;
 }
 
-
+/* Table */
 .table-wrapper {
   overflow-x: auto;
   background: rgba(3, 22, 14, 0.9);
@@ -213,7 +213,7 @@ tbody tr:hover {
   color: #9ae6b4;
 }
 
-
+/* ---------- Responsive ---------- */
 @media (max-width: 600px) {
   #download h2,
   #leaderboard h2 {

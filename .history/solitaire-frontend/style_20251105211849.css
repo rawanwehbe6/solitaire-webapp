@@ -85,22 +85,21 @@ body {
     font-size: 1rem;
   }
 }
-
+/* ---------- Download Section ---------- */
 #download {
   text-align: center;
-  background: linear-gradient(180deg, #021f14 0%, #052e1e 100%);
+  background: linear-gradient(180deg, #0b1020 0%, #111827 100%);
   padding: 3rem 1.5rem;
-  color: #e8f5e9;
+  color: #f3f4f6;
 }
 
 #download h2 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
-  color: #bbf7d0;
 }
 
 #download p {
-  color: #c8e6c9;
+  color: #d1d5db;
   font-size: 1.05rem;
   max-width: 600px;
   margin: 0 auto 1.5rem auto;
@@ -122,13 +121,13 @@ body {
 }
 
 #download .btn.primary {
-  background: #16a34a;
-  color: #f0fdf4;
+  background: #22c55e;
+  color: #021f14;
 }
 
 #download .btn.secondary {
-  border: 2px solid #16a34a;
-  color: #bbf7d0;
+  border: 2px solid #22c55e;
+  color: #22c55e;
   background: transparent;
 }
 
@@ -137,11 +136,11 @@ body {
   opacity: 0.9;
 }
 
-
+/* ---------- Leaderboard Section ---------- */
 #leaderboard {
   padding: 3rem 1.5rem;
-  background: linear-gradient(180deg, #052e1e 0%, #03160e 100%);
-  color: #e8f5e9;
+  background: #0b1020;
+  color: #f3f4f6;
 }
 
 #leaderboard .section-header {
@@ -154,12 +153,11 @@ body {
 
 #leaderboard h2 {
   font-size: 1.8rem;
-  color: #bbf7d0;
 }
 
 #leaderboard .btn.small {
-  background: #16a34a;
-  color: #f0fdf4;
+  background: #22c55e;
+  color: #022c22;
   font-size: 0.85rem;
   padding: 0.45rem 1rem;
   border-radius: 999px;
@@ -171,19 +169,19 @@ body {
   opacity: 0.9;
 }
 
-
+/* Table */
 .table-wrapper {
   overflow-x: auto;
-  background: rgba(3, 22, 14, 0.9);
+  background: #111827;
   border-radius: 10px;
   padding: 1rem;
-  border: 1px solid #14532d;
+  border: 1px solid #1f2937;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  color: #f0fdf4;
+  color: #e5e7eb;
 }
 
 th, td {
@@ -194,26 +192,26 @@ th, td {
 th {
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: #a7f3d0;
-  border-bottom: 1px solid #14532d;
+  color: #9ca3af;
+  border-bottom: 1px solid #1f2937;
 }
 
 tbody tr:nth-child(even) {
-  background: rgba(22, 163, 74, 0.08);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 tbody tr:hover {
-  background: rgba(22, 163, 74, 0.15);
+  background: rgba(255, 255, 255, 0.07);
   transition: 0.2s ease;
 }
 
 #leaderboard-empty {
   text-align: center;
   margin-top: 1rem;
-  color: #9ae6b4;
+  color: #9ca3af;
 }
 
-
+/* ---------- Responsive ---------- */
 @media (max-width: 600px) {
   #download h2,
   #leaderboard h2 {
