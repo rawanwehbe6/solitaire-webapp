@@ -13,7 +13,7 @@ body {
 
 
 .hero {
-  height: 100vh;
+  height: 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +24,8 @@ body {
 
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("images/solitare-img.webp") center/cover no-repeat;
+    url("images/solitaire-bg.jpg") center/cover no-repeat;
 }
-
 
 .hero-content {
   max-width: 700px;
@@ -45,7 +44,7 @@ body {
   color: #e5e7eb;
 }
 
-
+/* Buttons */
 .hero-buttons {
   display: flex;
   justify-content: center;
