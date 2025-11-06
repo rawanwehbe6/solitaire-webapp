@@ -1,0 +1,394 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #fff;
+  background: #0b0f1a;
+}
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../images/solitare-img.webp") center/cover no-repeat;
+}
+
+
+.hero-content {
+  max-width: 700px;
+  padding: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #e5e7eb;
+}
+
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: #22c55e;
+  color: #032c16;
+}
+
+.btn.secondary {
+  border: 2px solid #22c55e;
+  color: #22c55e;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+#download {
+  text-align: center;
+  background: linear-gradient(180deg, #021f14 0%, #052e1e 100%);
+  padding: 3rem 1.5rem;
+  color: #e8f5e9;
+}
+
+#download h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #bbf7d0;
+}
+
+#download p {
+  color: #c8e6c9;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+}
+
+#download .download-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#download .btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+#download .btn.primary {
+  background: #16a34a;
+  color: #f0fdf4;
+}
+
+#download .btn.secondary {
+  border: 2px solid #16a34a;
+  color: #bbf7d0;
+  background: transparent;
+}
+
+#download .btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+
+#leaderboard {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #052e1e 0%, #03160e 100%);
+  color: #e8f5e9;
+}
+
+#leaderboard .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#leaderboard h2 {
+  font-size: 1.8rem;
+  color: #bbf7d0;
+}
+
+#leaderboard .btn.small {
+  background: #16a34a;
+  color: #f0fdf4;
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+#leaderboard .btn.small:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+  background: rgba(3, 22, 14, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #14532d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f0fdf4;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #a7f3d0;
+  border-bottom: 1px solid #14532d;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(22, 163, 74, 0.08);
+}
+
+tbody tr:hover {
+  background: rgba(22, 163, 74, 0.15);
+  transition: 0.2s ease;
+}
+
+#leaderboard-empty {
+  text-align: center;
+  margin-top: 1rem;
+  color: #9ae6b4;
+}
+
+
+@media (max-width: 600px) {
+  #download h2,
+  #leaderboard h2 {
+    font-size: 1.5rem;
+  }
+
+  #download p {
+    font-size: 0.95rem;
+  }
+}
+/* ---------- About Section ---------- */
+#about {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #03160e 0%, #02120a 100%);
+  color: #e8f5e9;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #bbf7d0;
+}
+
+#about p {
+  color: #c8e6c9;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem auto;
+}
+
+#about h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: #a7f3d0;
+}
+
+#about a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#about a:hover {
+  color: #86efac;
+}
+
+
+.footer {
+  background: #021f14;
+  color: #a7f3d0;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #14532d;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+/* ---------- Add Score Page ---------- */
+.add-score-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #021f14 0%, #052e1e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  color: #e8f5e9;
+}
+
+.add-score-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #bbf7d0;
+  text-align: center;
+}
+
+.add-score-page p {
+  font-size: 1.05rem;
+  color: #c8e6c9;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Form card */
+#add-score-form {
+  background: rgba(3, 22, 14, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #14532d;
+  box-shadow: 0 0 15px rgba(22, 163, 74, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+#add-score-form label {
+  display: block;
+  font-weight: 600;
+  color: #bbf7d0;
+  margin-bottom: 0.4rem;
+}
+
+#add-score-form input[type="text"] {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #14532d;
+  background: #02120a;
+  color: #e8f5e9;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#add-score-form input[type="text"]:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 5px rgba(22, 163, 74, 0.4);
+}
+
+#add-score-form button {
+  width: 100%;
+  background: #16a34a;
+  color: #f0fdf4;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#add-score-form button:hover {
+  background: #22c55e;
+  transform: translateY(-2px);
+}
+
+#add-score-message {
+  text-align: center;
+  margin-top: 1rem;
+  color: #a7f3d0;
+}
+
+
+.add-score-page .link {
+  color: #22c55e;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.add-score-page .link:hover {
+  color: #86efac;
+}
+
+@media (max-width: 600px) {
+  #add-score-form {
+    padding: 1.5rem;
+  }
+  .add-score-page h1 {
+    font-size: 1.8rem;
+  }
+  .add-score-page p {
+    font-size: 0.95rem;
+  }
+}
+
